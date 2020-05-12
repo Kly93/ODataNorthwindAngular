@@ -13,7 +13,7 @@ import { NorthwindModule } from './northwind/northwind.module';
     ProductComponent
   ],
   imports: [
-    ODataModule.forRoot(Object.assign(NorthwindConfig, {baseUrl: 'https://services.odata.org/V4/Northwind/Northwind.svc/?$format=json' })),
+    ODataModule.forRoot(Object.assign(NorthwindConfig, {baseUrl: 'https://services.odata.org/V4/Northwind/Northwind.svc/' })),
     BrowserModule,
     AppRoutingModule,
     NorthwindModule
