@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ODataNorthwindAngular"
+    }
+  },
+  "defaultProject": "ODataNorthwindAngular",
+  "cli": {
+    "analytics": false
+  }
 }
