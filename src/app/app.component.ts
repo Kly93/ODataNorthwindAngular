@@ -27,8 +27,8 @@ export class AppComponent {
       let productService = this.factory.create<Product>("Products");
 
       let products = productService.entities();
-      console.log(this.odata.fromJSON(products.toJSON()));
-      console.log(productService.entities());
+      console.log("Products:", this.odata.fromJSON(products.toJSON()));
+      console.log("ProductService:", productService.entities());
       // Fetch set
       products.all()
         .subscribe(aports => console.log("All: ", aports));
